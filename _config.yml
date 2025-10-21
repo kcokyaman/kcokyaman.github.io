@@ -1,8 +1,89 @@
-title: Cerezlik
-description: 
-google_analytics: 
-show_downloads: false
-theme: jekyll-theme-architect
+#
+# --- Temel Ayarlar ---
+#
+# Sitenizin dili (HTML 'lang' etiketi için)
+lang: tr
+# Sitenizin başlığı (tarayıcı sekmesinde görünür)
+title: Bilişim Notlarım
+# Sitenizin alt başlığı (ana sayfada başlığın altında görünür)
+tagline: Teknoloji, Yazılım ve Sistem Üzerine Notlar
+# Sitenizin kısa açıklaması (SEO için)
+description: >-
+  Cloud, sistem yönetimi, siber güvenlik ve
+  diğer bilişim teknolojileri konularında kişisel blogum ve notlarım.
 
-gems:
-  - jekyll-mentions
+#
+# --- URL ve Alan Adı ---
+#
+# ÖNEMLİ: Sitenizin yayınlanacağı tam URL.
+# 'https..." ile başlamalı ve sonunda '/' olmamalı.
+url: "https://kcokyaman.github.io"
+
+#
+# --- Jekyll & Tema Ayarları ---
+#
+# Tema
+theme: jekyll-theme-chirpy
+# Sayfalama (ana sayfada kaç yazı gösterilsin?)
+paginate: 10
+paginate_path: "/page:num/"
+# Temanın 'skin' (görünümü). 'auto' (sistem tercihine göre), 'light' veya 'dark' olabilir.
+theme_mode: auto
+
+#
+# --- Sosyal Medya ve Yazar Bilgileri ---
+#
+# Avatar (profil resmi)
+# 'assets/img/' klasörüne kendi resminizi yükleyin (örn: avatar.jpg)
+# ve yolunu buraya yazın.
+avatar: "/assets/img/avatar.jpg"
+# Sosyal medya hesaplarınız
+social:
+  name: Kursad Cokyaman # Yazar adı
+  email: kcokyaman@gmail.com # E-posta
+  links:
+    # Kullanmadıklarınızı silebilir veya başına '#' koyarak yorum satırı yapabilirsiniz.
+    - https://twitter.com/kcokyaman
+    - https://github.com/kcokyaman
+    - https://www.linkedin.com/in/kcokyaman
+
+#
+# --- Diğer Ayarlar ---
+#
+# Google Analytics ID'nizi buraya ekleyebilirsiniz (örn: G-XXXXXXXXXX)
+google_analytics:
+  id: ""
+
+# Yorum sistemi (Disqus kullanabilirsiniz)
+disqus:
+  shortname: "" # Disqus 'shortname' bilginiz
+
+#
+# --- Build Ayarları (Bunları değiştirmeyin) ---
+#
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# Chirpy'nin çalışması için bu satırlar gereklidir.
+# Starter template ile geldikleri için DOKUNMAYIN.
+exclude:
+  - "/assets/js/dist/"
+  - "/assets/css/dist/"
+  - "*.gem"
+  - "*.gemspec"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "README.md"
+  - "LICENSE"
+  - "SECURITY.md"
+  - ".github"
+  - "docs"
+  - "tools"
+  - "vendor"
